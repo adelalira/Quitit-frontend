@@ -1,0 +1,24 @@
+<!--Título y botones de acceso-->
+<div class="row"  [ngClass]="{ dyslexia: dyslexia, biggerCursor: cursor, spacing: spacing }">
+    <div class="col-lg-12 col-xs-6">
+        <div class="get-in-touch">
+            <h3 class="title" [ngClass]="{ dyslexia: dyslexia, biggerCursor: cursor, spacing: spacing }">Meet ups</h3>
+        </div>
+        <div class="frame text-center">
+            <button class="custom-btn btn"   [ngClass]="{ dyslexia: dyslexia, biggerCursor: cursor, spacing: spacing }" (click)="showMeetUps()"><span>Meet ups</span></button>
+            <button class="custom-btn btn"   [ngClass]="{ dyslexia: dyslexia, biggerCursor: cursor, spacing: spacing }" (click)="createMeetUps()"><span>Create meet ups</span></button>
+          </div>
+    </div>
+  </div>
+
+<!--Ver todos los meetups-->
+<div *ngIf="showMeetUpsVisible">
+    <app-show-meet-ups></app-show-meet-ups>
+</div>
+
+
+<!--Crear meet ups-->
+<div *ngIf="createMeetUpsVisible">
+    <app-create-meet-ups></app-create-meet-ups>
+</div>
+

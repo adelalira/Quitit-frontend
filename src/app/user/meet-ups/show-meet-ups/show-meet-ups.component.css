@@ -1,0 +1,45 @@
+.contenedor{
+    margin-left: 4em;
+    margin-right: 4em;
+}
+
+
+.img1{
+    width: 25px;
+    margin-right: 0.5em;
+}
+
+.img2{
+    width: 22px;
+}
+
+@font-face {
+  font-family: "OpenDyslexic3Regular";
+  src: local("OpenDyslexic3Regular"), url(../../../../assets/fonts/OpenDyslexic-Regular.otf) format("truetype");
+}
+
+.dyslexia{
+  font-family: 'OpenDyslexic3Regular'!important;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.biggerCursor{
+  cursor: url('../../../../assets/cursor(1).png'), auto!important;/*hay imitaciones en cuanto al tamaño de los cursores*/
+}
+
+.spacing{
+  letter-spacing: 3px!important;
+}
+
+
+img:hover{
+  cursor:pointer;
+}
+input{
+  width: 80% !important;
+}
+
+.card{
+  margin-top: 2em;
+}

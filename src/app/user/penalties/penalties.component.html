@@ -1,0 +1,65 @@
+<div
+  class="row gx-0"
+  [ngClass]="{ dyslexia: dyslexia, biggerCursor: cursor, spacing: spacing }"
+>
+  <article class="card card--1 col-md-5 col-sm-12" *ngFor="let i of penalties">
+    <!--Hover-->
+    <div class="card__info-hover pb">
+      <!--Progress bar-->
+      <div class="progress">
+        <div
+          class="progress-bar progress-bar-info active"
+          role="progressbar"
+          aria-valuenow=""
+          aria-valuemin="0"
+          aria-valuemax="100"
+          [ngStyle]="{ width: cargaPorcentaje(i.objective, i.type) + '%' }"
+        ></div>
+      </div>
+    </div>
+
+    <!--Imagen e info-->
+    <div
+      class="card__img"
+      style="background-image: url('{{ ruta }}{{ i.img }}'); background-size: auto"
+    ></div>
+
+    <div
+      *ngIf="!blur; else elseBlock"
+      class="card__img--hover"
+      style="background-image: url('{{ ruta }}{{ i.img }}');"
+    ></div>
+    <ng-template #elseBlock>
+      <div
+        class="card__img--hover"
+        style="background-image: url('{{ ruta }}{{i.img}}');  filter: blur(8px);"
+      ></div>
+    </ng-template>
+
+    <div class="card__info">
+      <h3
+        class="card__title"
+        [ngClass]="{
+          dyslexia: dyslexia,
+          biggerCursor: cursor,
+          spacing: spacing
+        }"
+      >
+        {{ i.name }}
+      </h3>
+      <span
+        class="card__by card__author"
+        [ngClass]="{
+          dyslexia: dyslexia,
+          biggerCursor: cursor,
+          spacing: spacing
+        }"
+        >{{ i.text }}</span
+      >
+    </div>
+  </article>
+</div>
+
+<div class="espacio"></div>
+
+<app-floating-button ubicacion="Penalties"></app-floating-button>

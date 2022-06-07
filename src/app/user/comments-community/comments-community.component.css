@@ -1,0 +1,207 @@
+.bloqueComentario{
+  margin: 2em;
+  display: flex;
+  justify-content: center;
+  background-color: #f2f2f2;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-radius: 10px;
+}
+
+
+.imgReport:hover{
+  cursor:pointer;
+}
+
+.form-control{
+  margin-left: 4em !important;
+  width: 1100px;
+}
+
+button{
+  background-color: #52ab98;
+  color: white;
+  width: 150px;
+
+}
+
+
+/*IPAD*/
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+  .form-control{
+    margin-left: 2em !important;
+    width: 600px;
+  }
+
+  button{
+    background-color: #52ab98;
+    color: white;
+    width: 150px;
+    margin-right: 2em;
+
+  }
+}
+
+
+/*EH AQUI EL CHAT!*/
+.cardContainer{
+  height:500px ;
+}
+
+.card-header{
+  background-color: #52ab98;
+  color: white;
+  font-weight: bold;
+}
+
+.input-group-text{
+  background-color: #52ab98;
+  color: white;
+}
+
+.card-body{
+  background-image: url(../../../assets/chat/fondoChat2.png);
+  height: 100% !important;
+  padding-top: 0 !important;
+}
+
+
+.enviado{
+  display: block;
+  float: right;
+  background-color: #2b6777;
+  color: white;
+  min-width: 50.01%;
+  border-radius: 10px;
+  margin-bottom: 1em;
+}
+
+.recibido{
+  display: block;
+  float: left;
+  background-color: #c8d8e4;
+  color: black;
+  min-width: 50.01%;
+  border-radius: 10px;
+  margin-bottom: 1em;
+}
+
+.contenedorDeMensajes{
+  /*overflow: scroll;*/
+    height: 70vh;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+}
+
+.contenedorDeMensajes::-webkit-scrollbar{
+  display: none; /*ESTO ES PARA QUE LA BARRA DE SCROLL NO SE VEA*/
+}
+
+
+.username{
+  display: block;
+  float: left;
+  padding-left: 1em;
+}
+
+.comentarioUser{
+  display: block;
+  float: left;
+  padding-left: 0.2em;
+  text-align: left !important;
+}
+
+
+/*PANTALLAS*/
+@media screen and (min-width: 1279px){
+  input{
+    width: 70%;
+    border-radius: 5px;
+    height: 46px;
+    padding-bottom: 7px;
+    margin-right: 2em;
+  }
+  .barra{
+    margin-top: 100px;
+  }
+}
+
+
+/*IPAD*/
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+  input{
+    width: 60%;
+    border-radius: 5px;
+    height: 46px;
+    padding-bottom: 7px;
+    margin-right: 2em;
+    margin-left: 1em;
+  }
+
+  .contenedorDeMensajes{
+    /*overflow: scroll;*/
+      height: 80vh;
+      overflow: auto;
+      scroll-snap-type: y mandatory;
+  }
+
+  .barra{
+    margin-top: 370px;
+  }
+
+  form{
+    height: 100px;
+  }
+}
+
+
+/*MOVILES*/
+@media screen and (max-width: 769px) {
+  input{
+    width: 60%;
+    border-radius: 5px;
+    height: 46px;
+    padding-bottom: 7px;
+    margin-right: 10px;
+    margin-left: 1em;
+  }
+  button{
+    width: 22%;
+  }
+
+  .contenedorDeMensajes{
+    /*overflow: scroll;*/
+      height: 80vh;
+      overflow: auto;
+      scroll-snap-type: y mandatory;
+  }
+  .barra{
+    margin-top: 250px;
+  }
+
+}
+
+.imgReport{
+  max-width: 40px;
+  float:right;
+}
+
+@font-face {
+  font-family: "OpenDyslexic3Regular";
+  src: local("OpenDyslexic3Regular"), url(../../../assets/fonts/OpenDyslexic-Regular.otf) format("truetype");
+}
+
+.dyslexia{
+  font-family: 'OpenDyslexic3Regular'!important;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.biggerCursor{
+  cursor: url('../../../assets/cursor(1).png'), auto!important;/*hay imitaciones en cuanto al tamaño de los cursores*/
+}
+
+.spacing{
+  letter-spacing: 3px!important;
+}
+

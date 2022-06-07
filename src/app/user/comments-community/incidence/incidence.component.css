@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,500&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,500&family=Titan+One&display=swap');
+
+*{
+
+    font-size: 20px;
+    width: 600px;
+}
+
+h1{
+    font-family: 'Playfair Display', serif;
+    font-family: 'Titan One', cursive;
+    font-size: 30px;
+    margin: auto;
+    margin-bottom: 1em;
+}
+
+
+.custom-btn{
+    background-color: #52ab98;
+    width: 150px;
+    color:#fff;
+    text-shadow: rgb(105, 105, 105) 0.1em 0.1em 0.1em;
+    margin: auto;
+}
+
+.formulario{
+    margin: auto;
+}
+
+/*MOVILES*/
+@media screen and (max-width: 769px) {
+    *{
+        width: 300px;
+    }
+  }

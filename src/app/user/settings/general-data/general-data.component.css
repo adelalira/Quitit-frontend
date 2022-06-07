@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,500&family=Titan+One&display=swap');
+.title{
+  font-family: 'Titan One', cursive;
+}
+
+.subtitulo{
+  font-style: italic;
+}
+
+.photo {
+  width: 150px;
+  background-color: white;
+}
+
+.icon {
+  max-width: 2%;
+  height: auto;
+}
+
+.card{
+  margin: auto 12rem;
+  background-color: #f2f2f2;
+}
+
+label{
+  background-color: #52ab98;
+  margin-right: 2rem;
+  color: white;
+}
+
+
+@font-face {
+  font-family: "OpenDyslexic3Regular";
+  src: local("OpenDyslexic3Regular"), url(../../../../assets/fonts/OpenDyslexic-Regular.otf) format("truetype");
+}
+
+.dyslexia{
+  font-family: 'OpenDyslexic3Regular'!important;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.biggerCursor{
+  cursor: url('../../../../assets/cursor(1).png'), auto!important;/*hay imitaciones en cuanto al tamaño de los cursores*/
+}
+
+.spacing{
+  letter-spacing: 3px!important;
+}
+
+
+/*IPAD*/
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+  .card {
+    margin: auto 5rem !important;
+    background-color: #f2f2f2;
+    text-align: center;
+  }
+
+  .divInferior{
+    margin-left:  0px !important;
+
+
+  }
+}
+.dropzone{
+  margin: 1rem 12rem;
+}
+
+.boton{
+  margin-top: 1rem;
+  background-color: #52ab98;
+  border: #52ab98;
+}
+
+.boton:hover{
+  background-color: #226456;
+}
+
+
+/*MOVILES*/
+@media screen and (max-width: 769px) {
+ .card{
+   word-wrap: normal;
+   margin: auto !important;
+   margin-top: 2em !important;
+ } 
+
+ .title{
+  margin-top: 1em !important;
+ }
+}

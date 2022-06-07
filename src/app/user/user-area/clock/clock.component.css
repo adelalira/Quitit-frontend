@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,500&family=Titan+One&display=swap");
+
+
+.tituloOficial {
+  font-family: "Playfair Display", serif;
+  font-family: "Titan One", cursive;
+  font-size: 40px;
+}
+
+.progressFont {
+  font-family: "Playfair Display", serif;
+  font-family: "Titan One", cursive;
+  font-size: 20px;
+}
+
+.imgClock {
+  width: 200px;
+}
+
+label {
+  margin-left: 4em;
+  margin-right: 1em;
+}
+
+.progreso {
+  display: flex;
+  justify-content: center;
+}
+
+.miniImg {
+  width: 30px;
+  margin: 0 !important;
+  margin-right: 2em !important;
+}
+
+p {
+  font-size: 28px;
+}
+
+.fail {
+  background-color: #52ab98;
+}
+
+.fail:hover {
+  background-color: #2b6777;
+
+}
+
+.button{
+  background-color: #52ab98;
+}
+
+.boton{
+  background-color: #52ab98;
+}
+
+.boton:hover{
+  background-color: #2b6777;
+}
+
+@font-face {
+  font-family: "OpenDyslexic3Regular";
+  src: local("OpenDyslexic3Regular"), url(../../../../assets/fonts/OpenDyslexic-Regular.otf) format("truetype");
+}
+
+.dyslexia{
+  font-family: 'OpenDyslexic3Regular'!important;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.biggerCursor{
+  cursor: url('../../../../assets/cursor(1).png'), auto!important;/*hay imitaciones en cuanto al tamaño de los cursores*/
+}
+
+.spacing{
+  letter-spacing: 3px!important;
+}
+
+.ocultar{
+  z-index: -1;
+}
+
+/*MOVILES*/
+@media screen and (max-width: 769px) {
+  .tituloOficial {
+    font-family: "Playfair Display", serif;
+    font-family: "Titan One", cursive;
+    font-size: 40px;
+    margin-bottom: 0px !important;
+    color: black;
+    text-shadow: white 0.1em 0.1em 0.2em;
+    text-align: center;
+    line-height: 1;
+  }
+
+  .diasSinfumar{
+    line-height: 1;
+  }
+
+  .progressFont{
+    margin-left: 0px !important;
+  }
+
+  .miniImg {
+    width: 30px;
+    margin: 0 !important;
+  }
+
+  .datos{
+    margin-top: 18px;
+  }
+
+}
+
+
+
+/*PANTALLAS*/
+@media screen and (min-width: 1279px) {
+
+  .diasSinfumar{
+    line-height: 1;
+  }
+
+  .progressFont{
+    margin-left: 0px !important;
+  }
+
+  .miniImg {
+    width: 30px;
+    margin: 0 !important;
+  }
+
+  .datos{
+    margin-top: 18px;
+  }
+}
+
+
+
+/*IPAD*/
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+  .diasSinfumar{
+    line-height: 1;
+  }
+
+  .progressFont{
+    margin-left: 0px !important;
+  }
+
+  .miniImg {
+    width: 30px;
+    margin: 0 !important;
+  }
+
+  .datos{
+    margin-top: 18px;
+  }
+}

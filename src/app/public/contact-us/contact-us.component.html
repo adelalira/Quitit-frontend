@@ -1,0 +1,102 @@
+
+<section class="get-in-touch" [ngClass]="{
+  biggerCursor: cursor,
+  spacing: spacing
+}">
+    <h1 class="title" [ngClass]="{
+      dyslexia: dyslexia
+    }">Contact Us!</h1>
+    <div class="text-center" [ngClass]="{
+      dyslexia: dyslexia
+    }">Contact: 656454323 <br>
+      <a [ngClass]="{
+        dyslexia: dyslexia
+      }"  [ngClass]="{
+        biggerCursor: cursor
+      }" href="https://www.madrid.es/portales/munimadrid/es/Inicio/Personas-con-discapacidad/Centro-de-intermediacion-telefonica-para-personas-sordas-o-con-discapacidad-auditiva-y-o-de-fonacion/?vgnextfmt=default&vgnextoid=5dcc362e7fa3c210VgnVCM1000000b205a0aRCRD&vgnextchannel=0d50b7dd3f7fe410VgnVCM1000000b205a0aRCRD" target="_blank" class="text-center">Get an interpreter for your call through a videocall!</a></div>
+
+    <form
+      class="contact-form row gx-0"
+      autocomplete="off"
+      [formGroup]="miFormulario"
+      (ngSubmit)="submitFormulario()"
+    >
+
+      <!--EMAIL-->
+      <div class="form-field col-lg-6">
+        <input [ngClass]="{
+          dyslexia: dyslexia
+        }" [ngClass]="{
+          biggerCursor: cursor,
+          spacing: spacing
+        }"
+          placeholder="*Email"
+          id="fromUser"
+          class="input-text js-input"
+          formControlName="fromUser"
+          type="fromUser"
+          required
+        />
+        <span [ngClass]="{
+          dyslexia: dyslexia
+        }" class="form-text text-danger" *ngIf="campoNoValido('fromUser')">
+        </span>
+      </div>
+
+      <!--SUBJECT-->
+      <div class="form-field col-lg-6">
+        <input [ngClass]="{
+          dyslexia: dyslexia
+        }" [ngClass]="{
+          biggerCursor: cursor,
+          spacing: spacing
+        }"
+          placeholder="*Subject"
+          id="subject"
+          class="input-text js-input"
+          formControlName="subject"
+          type="subject"
+          required
+        />
+        <span [ngClass]="{
+          dyslexia: dyslexia
+        }" class="form-text text-danger" *ngIf="campoNoValido('subject')">
+        </span>
+      </div>
+
+      <!--BODY MESSAGE-->
+      <div class="form-field col-lg-12">
+        <input [ngClass]="{
+          dyslexia: dyslexia
+        }" [ngClass]="{
+          biggerCursor: cursor,
+          spacing: spacing
+        }"
+          placeholder="*Message"
+          id="text"
+          class="input-text js-input"
+          type="text"
+          required
+          formControlName="text"
+        />
+        <span [ngClass]="{
+          dyslexia: dyslexia
+        }" class="form-text text-danger" *ngIf="campoNoValido('mssg')">
+          {{ mssgError }}
+        </span>
+      </div>
+      <div class="form-field col-lg-12 text-center">
+        <input [ngClass]="{
+          dyslexia: dyslexia
+        }" [ngClass]="{
+          biggerCursor: cursor,
+          spacing: spacing
+        }"
+          class="submit-btn"
+          type="submit"
+          value="Submit"
+          [disabled]="miFormulario.invalid"
+        />
+      </div>
+    </form>
+  </section>

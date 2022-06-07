@@ -1,0 +1,91 @@
+.boton{
+  background-color: #2b6777;
+}
+
+.title{
+  font-family: 'Titan One', cursive;
+  text-align: center;
+}
+
+form{
+  background-color: rgb(226, 233, 240);
+  padding-top: 2rem;
+}
+
+
+@font-face {
+  font-family: "OpenDyslexic3Regular";
+  src: local("OpenDyslexic3Regular"), url(../../../../assets/fonts/OpenDyslexic-Regular.otf) format("truetype");
+}
+
+.dyslexia{
+  font-family: 'OpenDyslexic3Regular'!important;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.biggerCursor{
+  cursor: url('../../../../assets/cursor(1).png'), auto!important;/*hay imitaciones en cuanto al tamaño de los cursores*/
+}
+
+.spacing{
+  letter-spacing: 3px!important;
+}
+
+.centrado{
+ margin: auto;
+}
+
+.margin{
+  margin-right: 3rem;
+  margin-left: 3rem;
+}
+
+
+.izq{
+  float: left;
+}
+
+.der{
+  float:right;
+}
+
+/*MOVILES*/
+@media screen and (max-width: 769px) {
+
+  .get-in-touch{
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .formulario{
+    margin-right: 0!important;
+    margin-left: 0!important;
+  }
+
+  .column{
+    margin-left: 0!important;
+    margin-right: 0!important;
+    text-align:center;
+  }
+
+  input{
+    width: 90%;
+  }
+
+}
+
+
+/*IPAD*/
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+ .newPassword{
+   margin-right: 13rem;
+ }
+}
+
+/*PANTALLAS*/
+@media screen and (min-width: 1279px) {
+  form{
+    margin-right: 5rem!important;
+  }
+}

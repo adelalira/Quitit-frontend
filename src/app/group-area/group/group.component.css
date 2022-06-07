@@ -1,0 +1,183 @@
+
+
+.chat {
+  margin: 1rem 5rem;
+  padding: 0 !important;
+}
+
+.title {
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 2em;
+  font-family: "Titan One", cursive;
+  font-weight: bold;
+  text-shadow: 4px 4px 2px #c8d8e4;
+}
+
+.titleMembers {
+  text-align: center;
+  font-size: 1.5em;
+  font-family: "Titan One", cursive;
+  font-weight: bold;
+}
+@font-face {
+  font-family: "OpenDyslexic3Regular";
+  src: local("OpenDyslexic3Regular"), url(../../../assets/fonts/OpenDyslexic-Regular.otf) format("truetype");
+}
+
+.dyslexia{
+  font-family: 'OpenDyslexic3Regular'!important;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.biggerCursor{
+  cursor: url('../../../assets/cursor(1).png'), auto!important;/*hay imitaciones en cuanto al tamaño de los cursores*/
+}
+
+.spacing{
+  letter-spacing: 3px!important;
+}
+
+.chat {
+  background-color: #ffffff;
+  padding: 1rem;
+}
+
+.ranking {
+  background-color: #f2f2f2;
+  padding: 1rem;
+}
+
+.members {
+  background-color: #c8d8e4;
+  padding: 1rem;
+}
+
+
+.addMemberForm{
+  margin-left: 4rem;
+  margin-right: 0.3rem;
+  margin-top: 2rem;
+  border: black 1px solid;
+  border-radius: 8px;
+}
+
+.check{
+  margin-left: 1rem;
+}
+
+.icon2{
+  max-width: 35px!important;
+  height: auto !important;
+}
+
+.iconEdit{
+  max-width: 20px;
+  height: auto;
+}
+
+
+
+
+
+/*MOVILES*/
+@media screen and (max-width: 769px) {
+
+  .content{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .boton {
+    background-color: #52ab98;
+    position: relative;
+  }
+
+  .b1{
+    float:right;
+    margin-right: 0.5em;
+    margin-bottom:0.1em;
+  }
+
+  .b2{
+    float:left;
+    margin-left:1.8em!important;
+  }
+
+  .b3{
+    float:left;
+    margin-left:1.8em;
+    margin-top:0.1em;
+  }
+
+  .b4{
+    float:right;
+    margin-right:0.5em;
+  }
+
+  .infoGrupo{
+    margin-left: 1rem;
+  }
+
+
+  .chatDiv{
+    margin: 0;
+  }
+
+  .addMemberForm{
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+  }
+
+}
+
+
+
+/*IPAD*/
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+  button {
+    margin:auto;
+  }
+
+  .b1,.b2,.b3,.b4{
+    margin-right: 0.5em;
+  }
+
+  * {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.boton {
+  background-color: #52ab98;
+  float: right;
+  margin-right: 3em;
+  position: relative;
+  margin-left: 3em;
+}
+
+}
+
+/*PANTALLAS*/
+@media screen and (min-width: 1279px) {
+  button {
+    margin:auto
+  }
+  .b1,.b2,.b3,.b4{
+    margin-right: 1em!important;
+  }
+
+  * {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.boton {
+  background-color: #52ab98;
+  float: right;
+  margin-right: 3em;
+  position: relative;
+  margin-left: 3em;
+}
+}

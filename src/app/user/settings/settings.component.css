@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Federo&family=Quicksand:wght@300&display=swap");
+* {
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+}
+
+.title{
+  font-size: 35px;
+}
+
+.active{
+  color: white!important;
+  background-color: #2b6777!important;
+}
+
+a{
+  margin-left: 1em;
+}
+
+
+
+/*MOVILES*/
+@media screen and (max-width: 768px) {
+  a{
+    text-align: center;
+  }
+}
+
+/*IPAD*/
+@media screen and (min-width: 769px) and (max-width: 1278px) {
+
+}
+
+/*PANTALLAS*/
+@media screen and (min-width: 1279px) {
+
+}
+@font-face {
+  font-family: "OpenDyslexic3Regular";
+  src: local("OpenDyslexic3Regular"), url(../../../assets/fonts/OpenDyslexic-Regular.otf) format("truetype");
+}
+
+.dyslexia{
+  font-family: 'OpenDyslexic3Regular'!important;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.biggerCursor{
+  cursor: url('../../../assets/cursor(1).png'), auto!important;/*hay imitaciones en cuanto al tamaño de los cursores*/
+}
+
+.spacing{
+  letter-spacing: 3px!important;
+}
+

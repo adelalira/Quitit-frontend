@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Federo&family=Quicksand:wght@300&display=swap");
+@font-face {
+  font-family: "OpenDyslexic3Regular";
+  src: local("OpenDyslexic3Regular"), url(../../../../assets/fonts/OpenDyslexic-Regular.otf) format("truetype");
+}
+
+.dyslexia{
+  font-family: 'OpenDyslexic3Regular'!important;
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+}
+
+.boton{
+  background-color: #52ab98;
+}
+
+.form-control-file, .form-control-range {
+  display: block;
+  width: 90%;
+}
+
+
+
+/*MOVILES*/
+@media screen and (max-width: 769px) {
+  .text-center {
+    text-align: center !important;
+    margin: 1em;
+  }
+ }
+
+ .biggerCursor{
+  cursor: url('../../../../assets/cursor(1).png'), auto!important;/*hay imitaciones en cuanto al tamaño de los cursores*/
+}
+
+.spacing{
+  letter-spacing: 3px!important;
+}

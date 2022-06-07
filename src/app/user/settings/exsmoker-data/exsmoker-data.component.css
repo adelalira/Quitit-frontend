@@ -1,0 +1,111 @@
+
+.content{
+  margin: auto 5rem;
+}
+.card1{
+  margin-right: 1rem;
+}
+
+.card2{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.card3{
+  margin-left:1rem;
+}
+p{
+  margin-top:2rem;
+}
+
+.titulo-card{
+  font-weight: bold;
+}
+
+.card{
+  background-color: #f2f2f2  ;
+}
+
+.boton{
+background-color: #52ab98 ;
+}
+
+
+@font-face {
+  font-family: "OpenDyslexic3Regular";
+  src: local("OpenDyslexic3Regular"), url(../../../../assets/fonts/OpenDyslexic-Regular.otf) format("truetype");
+}
+
+.dyslexia{
+  font-family: 'OpenDyslexic3Regular'!important;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.biggerCursor{
+  cursor: url('../../../../assets/cursor(1).png'), auto!important;/*hay imitaciones en cuanto al tamaño de los cursores*/
+}
+
+.spacing{
+  letter-spacing: 3px!important;
+}
+
+/*IPAD*/
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+  .card2{
+  margin-left: 0rem;
+  margin-right: 1rem;
+  margin-top: 2em;
+  }
+
+  .card3{
+    margin-left:0rem;
+    margin-top: 2em;
+  }
+}
+
+
+/*MOVILES*/
+@media screen and (max-width: 769px) {
+  .card2{
+    margin-left: 0rem;
+    margin-right: 1rem;
+    margin-top: 2em;
+  }
+
+  .card3{
+    margin-left:0rem;
+    margin-top: 2em;
+  }
+
+  .content{
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+
+}
+
+.card-title{
+  font-size: 22px;
+}
+
+.card-subtitle{
+  font-size: 15px;
+}
+
+.botonYes {
+  background-color: #52ab98;
+}
+
+.botonYes:hover {
+  background-color: #c8d8e4;
+}
+
+.botonNo {
+  background-color: #2b6777;
+}
+
+.botonNo:hover {
+  background-color: #c8d8e4;
+}

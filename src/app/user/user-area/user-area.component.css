@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,500&family=Titan+One&display=swap");
+/*CARTAS*/
+
+.title {
+  font-family: "Titan One", cursive;
+  margin-top: 3.5rem;
+}
+
+.img {
+  width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+}
+
+.img2 {
+  width: 26%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+}
+
+.content {
+  margin-right: 2.3rem;
+  margin-left: 2.3rem;
+  z-index: 0;
+}
+
+.card {
+  margin-bottom: 1rem;
+  height: 12rem;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.community{
+  padding-left: 0.1em;
+  padding-right: 0.1em;
+}
+
+.card:hover{
+  background-color: #c8d8e4;
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: "OpenDyslexic3Regular";
+  src: local("OpenDyslexic3Regular"), url(../../../assets/fonts/OpenDyslexic-Regular.otf) format("truetype");
+}
+
+.dyslexia{
+  font-family: 'OpenDyslexic3Regular'!important;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.biggerCursor{
+  cursor: url('../../../assets/cursor(1).png'), auto!important;/*hay imitaciones en cuanto al tamaño de los cursores*/
+}
+
+.spacing{
+  letter-spacing: 3px!important;
+}
+
+
+/*PANTALLAS*/
+@media screen and (min-width: 1279px) {
+  .title {
+    font-family: "Titan One", cursive;
+    margin-top: 3rem;
+  }
+}
+
+
+/*MOVILES*/
+@media screen and (max-width: 769px) {
+  .title {
+    font-family: "Titan One", cursive;
+    margin-top: 2.5rem;
+  }
+
+  .img {
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+  }
+  
+  .img2 {
+    width: 26%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+  }
+
+  
+
+}
