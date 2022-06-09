@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  baseUrl: 'https://quitit.herokuapp.com/'
+  baseUrl: 'https://quitit.herokuapp.com'
 };
