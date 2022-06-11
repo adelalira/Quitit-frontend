@@ -6,6 +6,7 @@ import { UserService } from '../../services/user.service';
 import { ValidatorService } from '../../services/validator.service';
 import { PasswordValidatorService } from '../../services/password-validator.service';
 import { AccesibilityService } from 'src/app/shared/services/accesibility.service';
+import { User } from 'src/app/public/interfaces/interfaces';
 
 @Component({
   selector: 'app-change-pass',
@@ -95,8 +96,13 @@ export class ChangePassComponent implements OnInit {
    * @param objetivos
    */
   submitFormulario() {
+   let user: User = JSON.parse(<string>localStorage.getItem('user'));
+    const body ={
+      email: user.email,
+      password: this.miFormulario.get('password3')?.value
+    }
 
-    this.userService.changePass(this.miFormulario.get('password3')?.value).subscribe({
+    this.userService.changePass(body).subscribe({
       next: (resp) => {
         /**
          * RESETEAMOS LAS VARIABLES PARA CUANDO HAYA UN NUEVO REGISTRO NO PUEDAN DARNOS PROBLEMAS

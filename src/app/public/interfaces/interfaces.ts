@@ -120,3 +120,8 @@ export interface CommentsGroup{
   date: Date;
   idGroup: number;
 }
+
+export interface LoginCredentials{
+  email:string,
+  password: string;
+}

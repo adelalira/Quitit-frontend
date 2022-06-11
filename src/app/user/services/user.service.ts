@@ -5,6 +5,7 @@ import {
   Achievement,
   Commentario,
   Incidence,
+  LoginCredentials,
   MeetUP,
   ScheduledMessage,
   User,
@@ -324,7 +325,7 @@ export class UserService {
 
     /**
      * Indica que asistira al meet up
-     * @param id 
+     * @param id
      * @returns  meet up
      */
     asistenciaMeetUp(id:number){
@@ -340,8 +341,8 @@ export class UserService {
 
   /**
    * Indica que no asistira al meet up
-   * @param id 
-   * @returns 
+   * @param id
+   * @returns
    */
     noAsistenciaMeetUp(id:number){
       let falso = false;
@@ -354,11 +355,11 @@ export class UserService {
     }
     /**
      * Crea un nuevo meet up
-     * @param title 
-     * @param description 
-     * @param date 
-     * @param type 
-     * @param place 
+     * @param title
+     * @param description
+     * @param date
+     * @param type
+     * @param place
      * @returns  meet up
      */
     createMeetUp(title:string, description:string, date:string, type:string, place:string){
@@ -379,15 +380,12 @@ export class UserService {
     }
 
     /**
-     * Cambia la contraseña 
-     * @param password 
-     * @returns 
+     * Cambia la contraseña
+     * @param password
+     * @returns
      */
-    changePass(password:string){
+    changePass(body: LoginCredentials){
       const url = `${this.baseUrl}/user`;
-      let body = {
-        password:password
-      }
       let token = JSON.parse(<string>localStorage.getItem('token'));
       const opcion = new HttpHeaders().set('Authorization', `Bearer ${token}`);
       opcion.append('Access-Control-Allow-Origin', '*');
@@ -395,7 +393,7 @@ export class UserService {
     }
 
     /**
-     * 
+     *
      * @returns Lista de los meet ups a los que asiste el usuario
      */
     getAllMeetUpsUserAttendance(){
@@ -409,7 +407,7 @@ export class UserService {
     }
 
     /**
-     * 
+     *
      * @returns Lista de los meet ups a los que no asiste en usuario
      */
     getAllMeetUpsUserNotAttendance(){
