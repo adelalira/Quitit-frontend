@@ -42,7 +42,18 @@
       </div>
 
   </div>
+  <div class="text-center">
+    <button
+      class="btn fail mb-5 mt-4"
+      data-bs-toggle="modal"
+      data-bs-target="#cigarettesModal"
+      routerLinkActive="active"
+    >
+      <strong [ngClass]="{ dyslexia: dyslexia, biggerCursor: cursor, spacing: spacing }" > I failed! </strong>
+    </button>
 
+
+  </div>
 </div>
 
 <!--MODAL DE MENSAJE-->
@@ -74,57 +85,46 @@
   </div>
 </div>
 
-<div class="text-center">
-  <button
-    class="btn fail mb-5 mt-4"
-    data-bs-toggle="modal"
-    data-bs-target="#cigarettesModal"
-    routerLinkActive="active"
-  >
-    <strong [ngClass]="{ dyslexia: dyslexia, biggerCursor: cursor, spacing: spacing }" > I failed! </strong>
-  </button>
-
-  <div [ngClass]="{ dyslexia: dyslexia, biggerCursor: cursor, spacing: spacing }"
-    class="modal fade"
-    id="cigarettesModal"
-    tabindex="-1"
-    aria-labelledby="exampleModalLabel"
-    aria-hidden="true"
-  >
-    <div class="modal-dialog">
-      <div class="modal-content text-center">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">
-            We're sorry to hear that :( ...
-          </h5>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          ></button>
-        </div>
-        <div class="modal-body">How many cigarettes did you smoke?</div>
-        <div class="mb-2">
-          <input
-            type="number"
-            [(ngModel)]="cigarettes"
-            min="1"
-            name="cigarettes"
-            id="cigarettes"
-          />
-        </div>
-        <div class="modal-footer justify-content-center">
-          <button
-            type="button"
-            class="btn btn-primary"
-            data-bs-dismiss="modal"
-            (click)="userSmoked()"
-          >
-            OK
-          </button>
+<div [ngClass]="{ dyslexia: dyslexia, biggerCursor: cursor, spacing: spacing }"
+      class="modal fade"
+      id="cigarettesModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content text-center">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              We're sorry to hear that :( ...
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">How many cigarettes did you smoke?</div>
+          <div class="mb-2">
+            <input
+              type="number"
+              [(ngModel)]="cigarettes"
+              min="1"
+              name="cigarettes"
+              id="cigarettes"
+            />
+          </div>
+          <div class="modal-footer justify-content-center">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+              (click)="userSmoked()"
+            >
+              OK
+            </button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
