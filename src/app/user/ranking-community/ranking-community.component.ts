@@ -10,7 +10,7 @@ import { UserService } from '../services/user.service';
   templateUrl: './ranking-community.component.html',
   styleUrls: ['./ranking-community.component.css']
 })
-export class RankingCommunityComponent implements  OnDestroy, OnInit {
+export class RankingCommunityComponent implements  OnInit {
 
   users:User[]=[]
 
@@ -19,6 +19,7 @@ export class RankingCommunityComponent implements  OnDestroy, OnInit {
   dyslexia: boolean = false;
   cursor: boolean = false;
   spacing: boolean = false;
+  carga:boolean=false;
 
 
   constructor(private userService: UserService,private accesibilityService: AccesibilityService) { }
@@ -50,7 +51,7 @@ export class RankingCommunityComponent implements  OnDestroy, OnInit {
     this.userService.mostrarUsuarios().subscribe({
       next: (resp:any) => {
         this.users=resp;
-        this.dtTrigger.next(null);
+        this.carga=true;
       },
       error: (e) => {
         Swal.fire({
@@ -63,8 +64,10 @@ export class RankingCommunityComponent implements  OnDestroy, OnInit {
     }
   )}
 
-  ngOnDestroy(): void {
-    this.dtTrigger.unsubscribe();
+
+
+  applyFilterGlobal($event: any, stringVal: any, dt: any) {
+    dt!.filterGlobal(($event.target as HTMLInputElement).value, 'contains');
   }
 
 }
