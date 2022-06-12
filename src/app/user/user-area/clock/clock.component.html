@@ -10,19 +10,19 @@
   </button>
 </div>
 
-<div class="card mx-5 mt-4 ocultar" [ngClass]="{ dyslexia: dyslexia, biggerCursor: cursor, spacing: spacing }">
+<div class="card mx-5 mt-5" [ngClass]="{ dyslexia: dyslexia, biggerCursor: cursor, spacing: spacing }">
   <div class="clock">
     <div class="contenedor text-center mt-3">
       <div class="tituloOficial" [ngClass]="{ dyslexia: dyslexia, biggerCursor: cursor, spacing: spacing }">Your progress!</div>
       <div>
-        <img src="./assets/clock.png" class="imgClock mt-3 mb-3" />
+        <img src="./assets/clock.png" class="imgClock mt-3 mb-3" alt="image of a clock"/>
         <p [ngClass]="{ dyslexia: dyslexia, biggerCursor: cursor, spacing: spacing }" class="diasSinfumar">{{ user.daysInARowWithoutSmoking }} days in a row without smoking</p>
       </div>
     </div>
   </div>
 
   <div class="row text-center mt-5">
-  
+
       <div class="subtitulo col-12 col-md-4">
         <label [ngClass]="{ dyslexia: dyslexia, biggerCursor: cursor, spacing: spacing }" class="progressFont col-12">Smoke free days</label>
         <img src="./assets/calendar.png" class="miniImg" />
@@ -31,16 +31,16 @@
 
       <div class="subtitulo col-12 col-md-4">
         <label [ngClass]="{ dyslexia: dyslexia, biggerCursor: cursor, spacing: spacing }" class="progressFont col-12">Cigarettes avoided</label
-        ><img src="./assets/no-smoking.png" class="miniImg" />
+        ><img src="./assets/no-smoking.png" class="miniImg" alt="image of a broken cigarette"/>
         <p [ngClass]="{ dyslexia: dyslexia, biggerCursor: cursor, spacing: spacing }" class="datos">{{ user.cigarettesAvoided }}</p>
       </div>
 
       <div class="subtitulo col-12 col-md-4">
         <label [ngClass]="{ dyslexia: dyslexia, biggerCursor: cursor, spacing: spacing }" class="progressFont col-12">Money Saved</label
-        ><img src="./assets/piggy-bank.png" class="miniImg" />
+        ><img src="./assets/piggy-bank.png" class="miniImg" alt="image of a piggy bank" />
         <p [ngClass]="{ dyslexia: dyslexia, biggerCursor: cursor, spacing: spacing }" class="datos">{{ user.moneySaved }}€</p>
       </div>
-   
+
   </div>
   <div class="text-center">
     <button
@@ -52,7 +52,40 @@
       <strong [ngClass]="{ dyslexia: dyslexia, biggerCursor: cursor, spacing: spacing }" > I failed! </strong>
     </button>
 
-    <div [ngClass]="{ dyslexia: dyslexia, biggerCursor: cursor, spacing: spacing }"
+
+  </div>
+</div>
+
+<!--MODAL DE MENSAJE-->
+<div [ngClass]="{ dyslexia: dyslexia, biggerCursor: cursor, spacing: spacing }"
+  class="modal fade"
+  id="messageModal"
+  tabindex="-1"
+  aria-labelledby="messageModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content text-center">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">YOUR MESSAGE FROM OUR TEAM</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">{{scheduledMessage}}</div>
+      <div class="modal-footer justify-content-center">
+        <button type="button" class="btn button" data-bs-dismiss="modal" (click)="changeUserPropertyMessage()">
+          OK
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div [ngClass]="{ dyslexia: dyslexia, biggerCursor: cursor, spacing: spacing }"
       class="modal fade"
       id="cigarettesModal"
       tabindex="-1"
@@ -95,34 +128,3 @@
         </div>
       </div>
     </div>
-  </div>
-</div>
-
-<!--MODAL DE MENSAJE-->
-<div [ngClass]="{ dyslexia: dyslexia, biggerCursor: cursor, spacing: spacing }"
-  class="modal fade"
-  id="messageModal"
-  tabindex="-1"
-  aria-labelledby="messageModalLabel"
-  aria-hidden="true"
->
-  <div class="modal-dialog">
-    <div class="modal-content text-center">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">YOUR MESSAGE FROM OUR TEAM</h5>
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="modal"
-          aria-label="Close"
-        ></button>
-      </div>
-      <div class="modal-body">{{scheduledMessage}}</div>
-      <div class="modal-footer justify-content-center">
-        <button type="button" class="btn button" data-bs-dismiss="modal" (click)="changeUserPropertyMessage()">
-          OK
-        </button>
-      </div>
-    </div>
-  </div>
-</div>

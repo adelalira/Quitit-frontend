@@ -39,6 +39,7 @@ p {
 
 .fail {
   background-color: #52ab98;
+  cursor: pointer;
 }
 
 .fail:hover {
