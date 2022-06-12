@@ -79,7 +79,7 @@
   <p-tabView>
     <p-tabPanel header="All">
       <div class="container p-4 bg-white">
-        <p-table #dt [value]="users" dataKey="id" [rows]="10" [showCurrentPageReport]="true"
+        <p-table #dt [value]="users" dataKey="id" [rows]="1" [showCurrentPageReport]="true"
           [rowsPerPageOptions]="[10,25,50]" [loading]="!carga" styleClass="p-datatable-customers p-datatable-gridlines"
           [paginator]="true" currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
           [globalFilterFields]="['name','type','date','doing','place']">

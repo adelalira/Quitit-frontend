@@ -51,7 +51,6 @@ export class RankingCommunityComponent implements  OnInit {
     this.userService.mostrarUsuarios().subscribe({
       next: (resp:any) => {
         this.users=resp;
-        console.log(resp)
         this.carga=true;
       },
       error: (e) => {
