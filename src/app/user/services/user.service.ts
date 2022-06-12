@@ -37,8 +37,8 @@ export class UserService {
    */
   buscarComentariosComunidad() {
     const url = `${this.baseUrl}/commentsCommunity`;
-
-    const opcion = new HttpHeaders();
+    let token = JSON.parse(<string>localStorage.getItem('token'));
+    const opcion = new HttpHeaders().set('Authorization', `Bearer ${token}`);
     opcion.append('Access-Control-Allow-Origin', '*');
 
     return this.http.get<Commentario[]>(url, { headers: opcion });
