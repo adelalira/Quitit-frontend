@@ -11,7 +11,7 @@ import { AccesibilityService } from 'src/app/shared/services/accesibility.servic
 })
 export class PenaltiesComponent implements OnInit {
   penalties: Penalty[] = [];
-  ruta: string = './../assets/penalties/';
+  ruta: string = './assets/penalties/';
   user: User = JSON.parse(<string>localStorage.getItem('user'));
   blur: boolean = false;
   dyslexia: boolean = false;
