@@ -11,7 +11,7 @@ import { AccesibilityService } from 'src/app/shared/services/accesibility.servic
 })
 export class AchievementsComponent implements OnInit {
   logros: Achievement[] = [];
-  ruta: string = '../../../assets/logros/';
+  ruta: string = './assets/logros/';
   user: User = JSON.parse(<string>localStorage.getItem('user'));
   blur: boolean = false;
   dyslexia: boolean = false;

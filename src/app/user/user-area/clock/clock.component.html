@@ -15,32 +15,32 @@
     <div class="contenedor text-center mt-3">
       <div class="tituloOficial" [ngClass]="{ dyslexia: dyslexia, biggerCursor: cursor, spacing: spacing }">Your progress!</div>
       <div>
-        <img src="../../../../assets/clock.png" class="imgClock mt-3 mb-3" />
+        <img src="./assets/clock.png" class="imgClock mt-3 mb-3" alt="image of a clock"/>
         <p [ngClass]="{ dyslexia: dyslexia, biggerCursor: cursor, spacing: spacing }" class="diasSinfumar">{{ user.daysInARowWithoutSmoking }} days in a row without smoking</p>
       </div>
     </div>
   </div>
 
   <div class="row text-center mt-5">
-  
+
       <div class="subtitulo col-12 col-md-4">
         <label [ngClass]="{ dyslexia: dyslexia, biggerCursor: cursor, spacing: spacing }" class="progressFont col-12">Smoke free days</label>
-        <img src="../../../../assets/calendar.png" class="miniImg" />
+        <img src="./assets/calendar.png" class="miniImg" />
         <p [ngClass]="{ dyslexia: dyslexia, biggerCursor: cursor, spacing: spacing }" class="datos">{{ user.totalTimeWithoutSmoking }}</p>
       </div>
 
       <div class="subtitulo col-12 col-md-4">
         <label [ngClass]="{ dyslexia: dyslexia, biggerCursor: cursor, spacing: spacing }" class="progressFont col-12">Cigarettes avoided</label
-        ><img src="../../../../assets/no-smoking.png" class="miniImg" />
+        ><img src="./assets/no-smoking.png" class="miniImg" alt="image of a broken cigarette"/>
         <p [ngClass]="{ dyslexia: dyslexia, biggerCursor: cursor, spacing: spacing }" class="datos">{{ user.cigarettesAvoided }}</p>
       </div>
 
       <div class="subtitulo col-12 col-md-4">
         <label [ngClass]="{ dyslexia: dyslexia, biggerCursor: cursor, spacing: spacing }" class="progressFont col-12">Money Saved</label
-        ><img src="../../../../assets/piggy-bank.png" class="miniImg" />
+        ><img src="./assets/piggy-bank.png" class="miniImg" alt="image of a piggy bank" />
         <p [ngClass]="{ dyslexia: dyslexia, biggerCursor: cursor, spacing: spacing }" class="datos">{{ user.moneySaved }}€</p>
       </div>
-   
+
   </div>
   <div class="text-center">
     <button
