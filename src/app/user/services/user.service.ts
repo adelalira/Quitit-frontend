@@ -116,7 +116,7 @@ export class UserService {
     const opcion = new HttpHeaders().set('Authorization', `Bearer ${token}`);
     opcion.append('Access-Control-Allow-Origin', '*');
 
-    return this.http.get<User[]>(url, { headers: opcion });
+    return this.http.post<User[]>(url, { headers: opcion });
   }
 
   /**
@@ -226,7 +226,7 @@ export class UserService {
       let token = JSON.parse(<string>localStorage.getItem('token'));
       const opcion = new HttpHeaders().set('Authorization', `Bearer ${token}`);
       opcion.append('Access-Control-Allow-Origin', '*');
-      return this.http.get<User[]>(url, { headers: opcion });
+      return this.http.post<User[]>(url, { headers: opcion });
     }
 
     /**
@@ -239,7 +239,7 @@ export class UserService {
       let token = JSON.parse(<string>localStorage.getItem('token'));
       const opcion = new HttpHeaders().set('Authorization', `Bearer ${token}`);
       opcion.append('Access-Control-Allow-Origin', '*');
-      return this.http.get<User[]>(url, { headers: opcion });
+      return this.http.post<User[]>(url, { headers: opcion });
     }
 
     /**
@@ -269,7 +269,7 @@ export class UserService {
       let token = JSON.parse(<string>localStorage.getItem('token'));
       const opcion = new HttpHeaders().set('Authorization', `Bearer ${token}`);
       opcion.append('Access-Control-Allow-Origin', '*');
-      return this.http.get<User[]>(url, { headers: opcion });
+      return this.http.post<User[]>(url, { headers: opcion });
     }
 
   /**
