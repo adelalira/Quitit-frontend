@@ -87,7 +87,7 @@
               class="form-check-input"
               formControlName="admin"
             />
-            <label [ngClass]="{ dyslexia: dyslexia, biggerCursor: cursor, spacing: spacing }" class="form-check-label" for="admin">Make admin</label>
+            <label [ngClass]="{ dyslexia: dyslexia, biggerCursor: cursor, spacing: spacing }" class="form-check-label labelCheck" for="admin">Make admin</label>
           </div>
           <!--ADD MEMBER-->
 
@@ -119,7 +119,7 @@
                 <img
                   id="{{ member.user.username }}"
                   name="{{ member.cargo }}"
-                  src="../../../assets/edit.png"
+                  src="./assets/edit.png"
                   class="iconEdit"
                   (click)="editRoles($event)"
                 />

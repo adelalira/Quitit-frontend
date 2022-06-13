@@ -157,6 +157,16 @@
   margin-left: 3em;
 }
 
+.addMemberForm{
+  margin: 2rem!important;
+  border: black 1px solid;
+  border-radius: 8px;
+}
+
+.labelCheck{
+  margin-left:1.2rem!important;
+}
+
 }
 
 /*PANTALLAS*/
@@ -179,5 +189,15 @@
   margin-right: 3em;
   position: relative;
   margin-left: 3em;
+}
+
+.addMemberForm{
+  margin: 2rem!important;
+  border: black 1px solid;
+  border-radius: 8px;
+}
+
+.labelCheck{
+  margin-left:1.2rem!important;
 }
 }
