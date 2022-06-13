@@ -53,7 +53,7 @@ export class AddFriendsComponent implements OnInit {
 
   /**
    * Añade un usuario a amigo
-   * @param usuario 
+   * @param usuario
    */
   addFriend(usuario: User) {
     this.userService.addFriend(usuario).subscribe({
@@ -65,7 +65,7 @@ export class AddFriendsComponent implements OnInit {
           text: 'The user has been added to your friends list',
           confirmButtonColor: '#52ab98',
         });
-       //se renueva la lista de usuarios encontrados para que no apareciendo el usuario agregado
+       //se renueva la lista de usuarios encontrados para que no aparezca el usuario agregado
        this.usuariosEncontrados = this.usuariosEncontrados.filter(function(x) { return x != usuario });
       },
       error: (resp) => {

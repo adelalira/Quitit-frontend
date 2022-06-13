@@ -304,11 +304,10 @@ export class UserService {
    */
     addFriend(user: User){
       const url = `${this.baseUrl}/user`;
-      let envioVacio = null;
       let token = JSON.parse(<string>localStorage.getItem('token'));
       const opcion = new HttpHeaders().set('Authorization', `Bearer ${token}`);
       opcion.append('Access-Control-Allow-Origin', '*');
-      return this.http.post<User>(url, envioVacio, { headers: opcion });
+      return this.http.post<User>(url, user, { headers: opcion });
     }
 
     /**
