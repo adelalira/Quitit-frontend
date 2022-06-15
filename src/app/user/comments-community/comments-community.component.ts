@@ -58,12 +58,7 @@ export class CommentsCommunityComponent implements OnInit {
         this.comentarios = resp;
       },
       error: (e) => {
-        Swal.fire({
-          title: 'Error',
-          icon: 'error',
-          text: 'There are no services available at this time',
-          confirmButtonColor: '##52ab98',
-        });
+
       },
     });
   }

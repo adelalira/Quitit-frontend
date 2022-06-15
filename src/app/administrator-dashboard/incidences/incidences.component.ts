@@ -53,7 +53,7 @@ export class IncidencesComponent implements OnInit {
           Swal.fire({
             title: 'Error',
             icon: 'error',
-            text: 'The selected appointment could not be deleted',
+            text: 'The incidence could not be deleted',
             confirmButtonColor: '##52ab98',
           });
         }
@@ -71,7 +71,7 @@ export class IncidencesComponent implements OnInit {
       next: (resp) => {
         this.cargarIncidencias();
         Swal.fire({
-          title: 'Your appointment has been requested successfully',
+          title: 'State changed',
           icon: 'success',
           confirmButtonColor: '##52ab98',
         });
